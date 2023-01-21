@@ -15,26 +15,33 @@
     .orange{
         text-align: center;
         background-color: bisque;
-        margin-right:auto;
-        margin-left:auto;
-        margin-top: 5px;
         display: block;
         width: 300px;
         border-radius: 20px;
-        padding: 15px
+        padding: 15px;
+        border-width: 2px;
+        border-color: black;
+        border-style: solid;
 
     }
 
     #leftbox{
         float: left;
-        margin-top: -808px;
+        margin-top: -42%;
         width: 600px;
+    }
+
+    #linkbox{
+        margin-right:auto ;
+        margin-left:auto ;
+        margin-top:1% ;
     }
 
     #box2{
         float: right;
-        margin-top: -808px;
-        margin-right: 300px;
+        margin-top: -42%;
+        margin-right: 10%;
+
     }
         
     .center {
@@ -47,6 +54,9 @@
         font-family: Verdana, sans-serif;
         width: 500px;
         border-radius: 20px;
+        border-width: 2px;
+        border-color: black;
+        border-style:dotted;
         
         }
 
@@ -66,10 +76,9 @@
         <img src=./hackerman.png width="500px" alt="the character Hackerman from Kung Fury"></img>
         <p><span class="monospace">pictured: average terminal user</span></p>
     </div>
-    <div class="orange">
+    <div class="orange" id="linkbox">
 <h1>Some useful(?) information</h1>
         <p>Here is a randomly chosen <a href="https://en.wikipedia.org/wiki/Special:Random">wikipedia article.</a></p>
-
 
         </div>
     <div id="box2" class="orange">
@@ -90,5 +99,6 @@
 </div>
 
     </body>
+
 </html>
 

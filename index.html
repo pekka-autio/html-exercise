@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
     <head>
 
-
-
     <style>
-        h1{text-align: center;}
-        p{text-align: center;}
-        div{text-align: center;}
+    body{
+        background-color:mintcream
+    }
 
+    .monospace{
+        font-family: monospace;
+    }
+
+    .orange{
+        text-align: center;
+        background-color: bisque;
+        margin-right:auto;
+        margin-left:auto;
+        margin-bottom: 50%;
+        display: block;
+        width: 300px;
+        border-radius: 20px;
+        padding: 15px
+
+    }
+
+
+        
     .center {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 500;
+        padding: 15px;
+        background-color: aliceblue;
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        width: 500px;
+        border-radius: 20px;
+        
         }
 
     </style>
@@ -23,17 +45,24 @@
         <title>My first webpage</title>
     </head>
     <body>
+
+    <div class="whole_thing">
+    <div class="center">
         <h1>Welcome to my page</h1>
-        <p>This is a page created as a first step into HTML.</p>
-        <p>I'm interested in how this will turn out when css and javascript are taught later. (though there is a little bit of css in this page already)</p>
+        <p>This is a page created as a first step into HTML and css. </p>
+        <p>The page will change constantly.</p>
         <p>Before this, I had completed half of an online HTML course.</p>
         <p>here is an image:</p>
-        <img src="./hackerman.png" width="640" height="360" class="center"/>
-        <p><i>pictured: average terminal user</i></p>
-
+        <img src=./hackerman.png width="500px"></img>
+        <p><span class="monospace">pictured: average terminal user</span></p>
+    </div>
+    <div class="orange">
 <h1>Some useful(?) information</h1>
-        <p>Here is a randomly chosen <a href="https://en.wikipedia.org/wiki/Special:Random">wikipedia article.</a>
+        <p>Here is a randomly chosen <a href="https://en.wikipedia.org/wiki/Special:Random">wikipedia article.</a></p>
 
+        </div>
+        
+</div>
     </body>
 </html>
 

@@ -17,7 +17,7 @@
         background-color: bisque;
         margin-right:auto;
         margin-left:auto;
-        margin-bottom: 50%;
+        margin-top: 5px;
         display: block;
         width: 300px;
         border-radius: 20px;
@@ -25,14 +25,24 @@
 
     }
 
+    #leftbox{
+        float: left;
+        margin-top: -808px;
+        width: 600px;
+    }
 
+    #box2{
+        float: right;
+        margin-top: -808px;
+        margin-right: 300px;
+    }
         
     .center {
         display: block;
         margin-left: auto;
         margin-right: auto;
         padding: 15px;
-        background-color: aliceblue;
+        background-color:lightblue;
         text-align: center;
         font-family: Verdana, sans-serif;
         width: 500px;
@@ -53,16 +63,32 @@
         <p>The page will change constantly.</p>
         <p>Before this, I had completed half of an online HTML course.</p>
         <p>here is an image:</p>
-        <img src=./hackerman.png width="500px"></img>
+        <img src=./hackerman.png width="500px" alt="the character Hackerman from Kung Fury"></img>
         <p><span class="monospace">pictured: average terminal user</span></p>
     </div>
     <div class="orange">
 <h1>Some useful(?) information</h1>
         <p>Here is a randomly chosen <a href="https://en.wikipedia.org/wiki/Special:Random">wikipedia article.</a></p>
 
+
         </div>
+    <div id="box2" class="orange">
+        <h1>this thing is not quite aligned with the box on the left</h1>
+        <p>To do:</p>
+        <dl>
+            <dt>get this box to the top of the page</dt>
+            <dt>set a background image</dt>
+            <dt>choose a nicer font</dt>
+        </dl>
+    </div>
+    
+    <div id="leftbox" class="orange">
+        <h1>box on the left side made for containing some extra text</h1>
+        <p>lorem ipsum and whatnot</p>
+    </div>
         
 </div>
+
     </body>
 </html>
 

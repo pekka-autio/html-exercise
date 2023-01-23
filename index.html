@@ -11,92 +11,72 @@
     .monospace{
         font-family: monospace;
     }
-
-    .orange{
-        text-align: center;
-        background-color: bisque;
-        display: block;
-        width: 300px;
-        border-radius: 20px;
-        padding: 15px;
-        border-width: 2px;
-        border-color: black;
-        border-style: solid;
-
-    }
-
-    #leftbox{
-        float: left;
-        margin-top: -42%;
-        width: 600px;
-    }
-
-    #linkbox{
-        margin-right:auto ;
-        margin-left:auto ;
-        margin-top:1% ;
-    }
-
-    #box2{
-        float: right;
-        margin-top: -42%;
-        margin-right: 10%;
-
-    }
-        
-    .center {
-        display: block;
+   
+    P {
         margin-left: auto;
         margin-right: auto;
-        padding: 15px;
-        background-color:lightblue;
-        text-align: center;
-        font-family: Verdana, sans-serif;
-        width: 500px;
-        border-radius: 20px;
-        border-width: 2px;
-        border-color: black;
-        border-style:dotted;
+        text-align: left;
+        column-span: 1;
+    }
+
+    h1 {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
         
-        }
+       
+    }
+
+    IMG {
+        display:block;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+
+    dl {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: left;
+    }
+
+    div {
+        column-count: 3;
+        margin-top: 3%;
+        column-rule: 1px solid black;
+        column-fill: balance;
+    }
 
     </style>
         <meta charset="utf-8" />
         <title>My first webpage</title>
     </head>
     <body>
-
-    <div class="whole_thing">
-    <div class="center">
+<div>
         <h1>Welcome to my page</h1>
-        <p>This is a page created as a first step into HTML and css. </p>
-        <p>The page will change constantly.</p>
-        <p>Before this, I had completed half of an online HTML course.</p>
-        <p>here is an image:</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed posuere interdum sem. Quisque ligula eros ullamcorper quis, lacinia quis facilisis sed sapien. Mauris varius diam vitae arcu. Sed arcu lectus auctor vitae, consectetuer et venenatis eget velit. Sed augue orci, lacinia eu tincidunt et eleifend nec lacus. Donec ultricies nisl ut felis, suspendisse potenti. Lorem ipsum ligula ut hendrerit mollis, ipsum erat vehicula risus, eu suscipit sem libero nec erat. Aliquam erat volutpat. Sed congue augue vitae neque. Nulla consectetuer porttitor pede. Fusce purus morbi tortor magna condimentum vel, placerat id blandit sit amet tortor.</p>
+        <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa. Quisque purus lectus, posuere eget imperdiet nec sodales id arcu. Vestibulum elit pede dictum eu, viverra non tincidunt eu ligula.</p>
         <img src=./hackerman.png width="500px" alt="the character Hackerman from Kung Fury"></img>
-        <p><span class="monospace">pictured: average terminal user</span></p>
-    </div>
-    <div class="orange" id="linkbox">
-<h1>Some useful(?) information</h1>
-        <p>Here is a randomly chosen <a href="https://en.wikipedia.org/wiki/Special:Random">wikipedia article.</a></p>
+        <p class="monospace">pictured: average terminal user</p>
 
-        </div>
-    <div id="box2" class="orange">
+<p>Filler text</p>
+<h1>Some useful(?) information</h1>
+<p>Here is a randomly chosen <a href="https://en.wikipedia.org/wiki/Special:Random">wikipedia article.</a></p>
+
+    
         <h1>this thing is not quite aligned with the box on the left</h1>
         <p>To do:</p>
         <dl>
-            <dt>get this box to the top of the page</dt>
+            <dt>redo the css in a way that doesn't break</dt>
             <dt>set a background image</dt>
             <dt>choose a nicer font</dt>
         </dl>
-    </div>
+
     
-    <div id="leftbox" class="orange">
         <h1>box on the left side made for containing some extra text</h1>
         <p>lorem ipsum and whatnot</p>
-    </div>
-        
-</div>
+
+        </div>
 
     </body>
 

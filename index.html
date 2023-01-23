@@ -2,16 +2,24 @@
 <html lang="en">
 
     <head>
-
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=MedievalSharp">
     <style>
     body{
         background-color: azure;
     }
 
+
+
+
     .monospace{
         font-family: monospace;
         text-align: center;
     }
+    .scribe{
+        font-family: MedievalSharp;
+        text-align: center;
+    }   
    
     P {
         margin-left: auto;
@@ -26,6 +34,7 @@
         text-align: left;
         font-family: 'Courier New';
         border: 2px black solid;
+        padding: 5px;
        
     }
 
@@ -48,6 +57,7 @@
         column-count: 3;
         column-rule: 1px solid black;
         column-fill:auto;
+        column-width: 30%;
     }
 
     #text-box {
@@ -62,7 +72,7 @@
     </head>
     <body>
 <div>
-        <h1>Welcome to my page</h1>
+        <h1>sample text</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed posuere interdum sem. Quisque ligula eros ullamcorper quis, lacinia quis facilisis sed sapien. Mauris varius diam vitae arcu. Sed arcu lectus auctor vitae, consectetuer et venenatis eget velit. Sed augue orci, lacinia eu tincidunt et eleifend nec lacus. Donec ultricies nisl ut felis, suspendisse potenti. Lorem ipsum ligula ut hendrerit mollis, ipsum erat vehicula risus, eu suscipit sem libero nec erat. Aliquam erat volutpat. Sed congue augue vitae neque. Nulla consectetuer porttitor pede. Fusce purus morbi tortor magna condimentum vel, placerat id blandit sit amet tortor.</p>
         <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa. Quisque purus lectus, posuere eget imperdiet nec sodales id arcu. Vestibulum elit pede dictum eu, viverra non tincidunt eu ligula.</p>
         <p id="text-box">The Lorem ipsum text is derived from sections 1.10.32 and 1.10.33 of Cicero's 'De finibus bonorum et malorum'. The physical source may have been the 1914 Loeb Classical Library edition of De finibus, where the Latin text, presented on the left-hand (even) pages, breaks off on page 34 with "Neque porro quisquam est qui do-" and continues on page 36 with "lorem ipsum ...", suggesting that the galley type of that page was mixed up to make the dummy text seen today.</p>
@@ -84,10 +94,12 @@
         </dl>
 
     
-        <h1>box on the left side made for containing some extra text</h1>
-        <p>lorem ipsum and whatnot</p>
+        <h1>box on the right side made for containing some extra text</h1>
+        <p class="scribe">LOREM IPSVM AND WHATNOT</p>
+        <img src =https://media.gettyimages.com/photos/medieval-scribe-writes-at-his-desk-surrounded-by-open-manuscripts-picture-id71913798 width ="500px" >
 
         </div>
+
 
 
     </body>

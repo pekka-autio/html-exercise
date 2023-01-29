@@ -3,12 +3,16 @@
 
     <head>
 <link rel="stylesheet"
-href="https://fonts.googleapis.com/css?family=MedievalSharp">
+href="https://fonts.googleapis.com/css?family=MedievalSharp"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
     <style>
     body{
         background-color: azure;
-        margin-left: 20%;
-        margin-right: 20%;
+
     }
 
     .monospace{
@@ -19,8 +23,41 @@ href="https://fonts.googleapis.com/css?family=MedievalSharp">
         font-family: MedievalSharp;
         text-align: center;
         font-size: 32px;
+        
     }   
    
+
+    .gridSection {
+        margin-left: 15%;
+        padding: 5px;
+        display: grid;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-columns: 50px 50px 50px;
+    }
+
+    .gridItem{
+        text-align: center;
+        margin: 20px;
+    
+    }
+
+    .container {
+        margin-left: 20%;
+        margin-right: 20%;
+        display: flex;
+        
+
+    }
+
+    .leftColumn {
+        flex: 1;
+        margin-right: 30px;
+    }
+
+    .rightcolumn {
+        flex: 1;
+        margin-left: 30px;
+    }
     P {
         margin-left: auto;
         margin-right: auto;
@@ -31,7 +68,7 @@ href="https://fonts.googleapis.com/css?family=MedievalSharp">
     h1 {
         margin-left: auto;
         margin-right: auto;
-        text-align: left;
+        text-align: center;
         font-family: 'Courier New';
         border: 2px black solid;
         padding: 5px;
@@ -52,17 +89,25 @@ href="https://fonts.googleapis.com/css?family=MedievalSharp">
         font-family: 'Franklin Gothic Medium';
     }
 
-    div {
-        display:flex;
-        flex-direction: column;
-        
-    }
+
+.navbar {
+  display: flex; /* enable flexbox on the navbar container */
+  justify-content: space-between; /* distribute the links evenly across the navbar */
+  font-size: 35px;
+  border-bottom: 2px black solid;
+  padding: 5px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
 
     #text-box {
         background-image: linear-gradient(white, transparent);
         border: 2px black solid;
         padding: 5px;
+        width: 300px;
+      
         
+    
     }
 
     </style>
@@ -70,36 +115,58 @@ href="https://fonts.googleapis.com/css?family=MedievalSharp">
         <title>My first webpage</title>
     </head>
     <body>
-<div>
+
+<nav class="navbar">
+  <a href="#">thing 1</a>
+  <a href="#">thing 2</a>
+  <a href="#">thing 3</a>
+</nav>
+
+<div class="container">
+    <div class ="leftColumn">
         <h1>sample text</h1>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed posuere interdum sem. Quisque ligula eros ullamcorper quis, lacinia quis facilisis sed sapien. Mauris varius diam vitae arcu. Sed arcu lectus auctor vitae, consectetuer et venenatis eget velit. Sed augue orci, lacinia eu tincidunt et eleifend nec lacus. Donec ultricies nisl ut felis, suspendisse potenti. Lorem ipsum ligula ut hendrerit mollis, ipsum erat vehicula risus, eu suscipit sem libero nec erat. Aliquam erat volutpat. Sed congue augue vitae neque. Nulla consectetuer porttitor pede. Fusce purus morbi tortor magna condimentum vel, placerat id blandit sit amet tortor.</p>
         <p>Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa. Quisque purus lectus, posuere eget imperdiet nec sodales id arcu. Vestibulum elit pede dictum eu, viverra non tincidunt eu ligula.</p>
-        <p id="text-box">The Lorem ipsum text is derived from sections 1.10.32 and 1.10.33 of Cicero's 'De finibus bonorum et malorum'. The physical source may have been the 1914 Loeb Classical Library edition of De finibus, where the Latin text, presented on the left-hand (even) pages, breaks off on page 34 with "Neque porro quisquam est qui do-" and continues on page 36 with "lorem ipsum ...", suggesting that the galley type of that page was mixed up to make the dummy text seen today.</p>
-        <p id="text-box">The discovery of the text's origin is attributed to Richard McClintock, a Latin scholar at Hampden–Sydney College. McClintock connected Lorem ipsum to Cicero's writing sometime before 1982 while searching for instances of the Latin word consectetur, which was rarely used in classical literature. McClintock first published his discovery in a 1994 letter to the editor of Before & After magazine, contesting the editor's earlier claim that Lorem ipsum held no meaning.</p>
-        <img src=./hackerman.png width="500px" alt="the character Hackerman from Kung Fury"></img>
-        <p class="monospace">pictured: average terminal user</p>
 
+        <p id="text-box" >The Lorem ipsum text is derived from sections 1.10.32 and 1.10.33 of Cicero's 'De finibus bonorum et malorum'. The physical source may have been the 1914 Loeb Classical Library edition of De finibus, where the Latin text, presented on the left-hand (even) pages, breaks off on page 34 with "Neque porro quisquam est qui do-" and continues on page 36 with "lorem ipsum ...", suggesting that the galley type of that page was mixed up to make the dummy text seen today.</p>
+        <p id="text-box">The discovery of the text's origin is attributed to Richard McClintock, a Latin scholar at Hampden–Sydney College. McClintock connected Lorem ipsum to Cicero's writing sometime before 1982 while searching for instances of the Latin word consectetur, which was rarely used in classical literature. McClintock first published his discovery in a 1994 letter to the editor of Before & After magazine, contesting the editor's earlier claim that Lorem ipsum held no meaning.</p>
+
+        <img src=./hackerman.png width="500px" alt="the character Hackerman from Kung Fury"></img>
+        <p class="monospace">pictured: average terminal user, now rendered irrelevant to this page</p>
+    </div>
+
+    <div class ="rightcolumn">
+<h1>sample text</h1>
 <p>Cu utinam appareat scriptorem nec, quo ad natum lobortis urbanitas, sit solum partiendo et. Et duo elitr labores. Stet iracundia gubergren ne vel, alterum hendrerit ius id. His virtute equidem abhorreant et, an nullam vocent perpetua his, ea mel aeque adipisci. Audiam ponderum tractatos pri no, blandit vivendum mei no. Ea est ullum debitis, usu dictas adipiscing id.</p>
 <h1>Some useful(?) information</h1>
 <p>Here is a randomly chosen <a href="https://en.wikipedia.org/wiki/Special:Random">wikipedia article.</a></p>
 
     
-        <h1>Column 3 contains some text</h1>
+        <h1>additional page content</h1>
         <p>To do:</p>
         <dl>
-            <dt>redo the css in a way that doesn't break</dt>
-            <dt>figure out why the color doesn't reach the top of the page</dt>
-            <dt>choose a nicer font</dt>
+            <dt>reorganize the page</dt>
         </dl>
 
     
-        <h1>box on the right side made for containing some extra text</h1>
+        <h1>more content on the page</h1>
         <p class="scribe">LOREM IPSVM AND WHATNOT</p>
         <img src =https://media.gettyimages.com/photos/medieval-scribe-writes-at-his-desk-surrounded-by-open-manuscripts-picture-id71913798 width ="500px" >
 
-        </div>
+        
+</div>  
 
-
+<div class="gridSection">
+    <div class="gridItem">sample text</div>
+    <div class="gridItem">sample text 2</div>
+    <div class="gridItem">sample text 3</div> 
+    <div class="gridItem">sample text 4</div>
+    <div class="gridItem">sample text 5</div>
+    <div class="gridItem">sample text 6</div>
+    <div class="gridItem">sample text 4</div>
+    <div class="gridItem">sample text 5</div>
+    <div class="gridItem">sample text 6</div>
+</div>
 
     </body>
 
